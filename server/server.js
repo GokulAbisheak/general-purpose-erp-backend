@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import cors from 'cors'
 import logger from './utilities/logger.js';
 import connectDatabase from './configs/database.js';
+import BusinessRouter from './routes/business.route.js';
 
 dotenv.config();
 const app = express();
@@ -20,3 +21,6 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
     res.json('General Purpose ERP Backend')
 })
+
+//routes
+app.use('/business', BusinessRouter);
