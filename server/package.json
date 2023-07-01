@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "babel-node": "babel-node --presets='@babel/preset-env'",
+    "start": "nodemon --exec yarn run babel-node -- server.js",
+    "build": "babel . -d dist"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1",
+    "nodemon": "^2.0.22",
+    "pino": "^8.14.1",
+    "pino-pretty": "^10.0.0"
+  }
+}
