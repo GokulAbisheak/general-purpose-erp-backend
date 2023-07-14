@@ -10,7 +10,13 @@ const app = express();
 
 const PORT = process.env.PORT;
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://general-purpose-erp-backend.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 app.use(express.json());
 
 app.listen(PORT, () => {
