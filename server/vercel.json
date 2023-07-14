@@ -6,9 +6,5 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/server.js" }],
-
-  "env": {
-    "NODE_OPTIONS": "--require pino-pretty"
-  }
+  "routes": [{ "src": "/(.*)", "dest": "/server.js" }]
 }
