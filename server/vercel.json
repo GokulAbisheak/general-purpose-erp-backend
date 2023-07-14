@@ -2,11 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.js",
+      "src": "*.js",
       "use": "@vercel/node"
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/server.js" }],
+  "routes": [{ "src": "/(.*)", "dest": "/" }],
 
   "env": {
     "NODE_OPTIONS": "--require pino-pretty"
