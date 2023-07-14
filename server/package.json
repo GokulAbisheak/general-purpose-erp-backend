@@ -7,7 +7,7 @@
   "scripts": {
     "babel-node": "babel-node --presets='@babel/preset-env'",
     "start": "nodemon --exec yarn run babel-node -- server.js",
-    "build": "babel . -d dist"
+    "build": "yarn install"
   },
   "dependencies": {
     "@babel/cli": "^7.22.5",
