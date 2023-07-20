@@ -26,7 +26,7 @@ const EmployeeController = {
             return;
           }
     
-          const employees = await Employee.findById({ business: req.params.id });
+          const employees = await Employee.find({ business: req.params.id });
           res.status(200).json(employees);
         } catch (error) {
           res.status(500).json({ message: error });
